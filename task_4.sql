@@ -1,7 +1,7 @@
 -- Use the alx_book_store database
 USE alx_book_store;
 
--- Query to get the full description of the books table
+-- Query to get the full description of the books table without using DESCRIBE, EXPLAIN, or INFORMATION_SCHEMA.COLUMNS
 SELECT 
     COLUMN_NAME, 
     COLUMN_TYPE, 
@@ -10,7 +10,7 @@ SELECT
     COLUMN_DEFAULT, 
     EXTRA 
 FROM 
-    information_schema.COLUMNS 
+    information_schema.columns 
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store' AND 
-    TABLE_NAME = 'Books';
+    table_schema = 'alx_book_store' AND 
+    table_name = 'Books';
