@@ -8,9 +8,9 @@ SELECT
     IS_NULLABLE, 
     COLUMN_KEY, 
     COLUMN_DEFAULT, 
-    EXTRA
+    EXTRA 
 FROM 
-    information_schema.coslumns 
+    information_schema.columns 
 WHERE 
     table_schema = 'alx_book_store' AND 
     table_name = 'Books';
